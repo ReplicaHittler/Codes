@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bounce</title>
+    <style>
+        .container{
+             width: 85%;
+             height: 85vh;
+             background-color: rgba(0, 0, 0, 0.1);
+             display: flex;
+             justify-content: flex-end;
+             flex-direction: column;
+            }
+            .ball{
+                height: 60px;
+                width: 60px;
+                background-color: red;
+                border: 2px solid black;
+                border-radius: 50%;
+                animation: animateX 3s linear infinite, animateY 1s ease-out infinite alternate ;
+                position: relative;
+            
+        }
+            @keyframes animateX {
+            from{
+                left: 0%;
+            }
+            to{
+                left: 100%;
+            }
+        }
+        @keyframes animateY {
+            from{
+                bottom: 0%;
+            }
+            to{
+                bottom: 70%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="ball">
+
+        </div>
+    </div>
+</body>
+</html>

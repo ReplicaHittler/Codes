@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variable in CSS</title>
+    <style>
+        /* root for golobal vatriables */
+        :root{
+            --color:blue;
+            --opac:34px;
+        }
+        /* local vatiables in inside element tag */
+        h1{
+            /* local variable used here -- these are used in which they are declared*/
+            --color:red;
+            background-color: var(--color);
+        }
+        /* global variavle used below */
+        p{
+            background-color: var(--color);
+        }
+    </style>
+</head>
+<body>
+    <p>
+        Hey there Buddy! You must be alright...
+    </p>
+    <h1>
+        Hiiiiiiiiiiiiiiiiiii
+    </h1>
+</body>
+</html>

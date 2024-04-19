@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 80vh;
+            width: auto;
+            background-color: black;
+        }
+        .box{
+            height: 14vh;
+            width: 7vw;
+            border: 1px dashed white;
+            background-color: white;
+            animation: MyAnimation 5s ease 4s infinite ;
+            /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+
+        }
+        @keyframes MyAnimation {
+            from{
+                background-color: blueviolet;
+            }
+            to{
+                background-color: yellow;
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">Box</div>
+    </div>
+</body>
+</html>

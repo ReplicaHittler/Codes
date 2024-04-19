@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shapes</title>
+    <style>
+        *{
+            background-color: black;
+        }
+        .square{
+            height: 100px;
+            width: 100px;
+            background-color: white;
+            text-align: center;
+           
+        }
+        .rectangle{
+            height: 100px;
+            width: 200px;
+            background-color: white;
+            text-align: center;
+            margin: 10px 20px 30px 30px;
+        }
+        .circle{
+            height: 100px;
+            width: 100px;
+            background-color: white;
+            border-radius: 50%;
+        }
+        .triangle{
+        width: 0px;
+        height: 0px;
+        border-top: 100px solid rgb(234, 234, 234);
+        border-right: 100px solid transparent;
+        }
+    .heart{
+      position: relative;
+      width: 100px;
+      height: 90px;
+    }
+    .heart:before,.heart:after {
+      position: absolute;
+      content: "";
+      left: 50px;
+      top: 0;
+      width: 50px;
+      height: 80px;
+      background: rgb(255, 255, 255);
+      border-radius: 50px 50px 0 0;
+      transform: rotate(-45deg);
+      transform-origin: 0 100%;
+    }
+    .heart:after {
+      left: 0;
+      transform: rotate(45deg);
+      transform-origin: 100% 100%;
+    }
+    </style>
+</head>
+<body>
+    <div class="square">
+        Square
+    </div>
+    <div class="rectangle">
+        rectangle
+    </div>
+    <div class="circle">
+        circle
+    </div>
+    <div class="triangle">
+        triangle
+    </div>
+    <div class="heart">
+        heart
+    </div>
+    </body>
+</html>

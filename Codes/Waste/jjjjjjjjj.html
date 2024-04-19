@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Social Menu</title>
+  <link rel="stylesheet" href="/css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+  integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+  crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <style>
+            @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+body{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-family: 'Poppins';
+}
+.main_back {
+	position: absolute;
+	border-radius: 10px;
+	transform: rotate(90deg);
+	width: 11em;
+	height: 11em;
+	background: linear-gradient(270deg, #03a9f4, #cc39a4, #ffb5d2);
+	z-index: -2;
+	box-shadow: inset 0px 0px 180px 5px #ffffff;
+  }
+  
+  .main {
+	display: flex;
+	flex-wrap: wrap;
+	width: 14em;
+	justify-content: center;
+	z-index: -1;
+  }
+  
+  .card {
+	width: 60px;
+	height: 60px;
+	border-top-left-radius: 10px;
+	background: lightgrey;
+	transition: .4s ease-in-out, .2s background-color ease-in-out, .2s background-image ease-in-out;
+	background: rgba(255, 255, 255, 0.596);
+	backdrop-filter: blur(5px);
+	border: 1px solid transparent;
+	-webkit-backdrop-filter: blur(5px);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+  }
+  
+  .card .instagram {
+	opacity: 0;
+	transition: .2s ease-in-out;
+  }
+  
+  .card:nth-child(2) .twitter {
+	opacity: 0;
+	transition: .2s ease-in-out;
+  }
+  
+  .card:nth-child(3) {
+	border-top-right-radius: 10px;
+	border-top-left-radius: 0px;
+  }
+  
+  .card:nth-child(3) .tiktok {
+	opacity: 0;
+	transition: .2s ease-in-out;
+  }
+  
+  .card:nth-child(4) {
+	border-radius: 0px;
+  }
+  
+  .card:nth-child(4) .facebook {
+	opacity: 0;
+	transition: .2s ease-in-out;
+  }
+  
+  .card:nth-child(5) {
+	border-radius: 0px;
+  }
+  
+  .card:nth-child(6) {
+	border-radius: 0px;
+  }
+  
+  .card:nth-child(6) .discord {
+	opacity: 0;
+	transition: .2s ease-in-out;
+	fill: #8c9eff;
+  }
+  .card:nth-child(7) {
+	border-bottom-left-radius: 10px;
+	border-top-left-radius: 0px;
+  }
+  
+  .card:nth-child(7) .github {
+	opacity: 0;
+	transition: .2s ease-in-out;
+	fill: black;
+  }
+  
+  .card:nth-child(8) {
+	border-radius: 0px;
+  }
+  
+  .card:nth-child(8) .telegram {
+	opacity: 0;
+	transition: .2s ease-in-out;
+	fill: #29b6f6;
+  }
+  
+  .card:nth-child(9) {
+	border-bottom-right-radius: 10px;
+	border-top-left-radius: 0px;
+  }
+  
+  .card:nth-child(9) .youtube {
+	opacity: 0;
+	transition: .2s ease-in-out;
+  }
+  
+  .main:hover {
+	width: 14em;
+	cursor: pointer;
+  }
+  
+  .main:hover .main_back {
+	opacity: 0;
+  }
+  
+  .main:hover .card {
+	margin: .2em;
+	border-radius: 10px;
+	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+	border: 1px solid rgba(255, 255, 255, 0.334);
+	background: rgba(255, 255, 255, 0.2);
+  }
+  
+  .main:hover .card:nth-child(5) {
+	border: transparent;
+  }
+  
+  .main:hover .text {
+	opacity: 0;
+	z-index: -3;
+  }
+
+  .main:hover .youtube, 
+  .main:hover .telegram,
+  .main:hover .github,
+  .main:hover .tiktok,
+  .main:hover .instagram,
+  .main:hover .discord,
+  .main:hover .facebook,
+  .main:hover .twitter{
+	opacity: 1;
+  }
+        </style>
+</head>
+<body>
+  <div class="main">
+    <div class="card">
+      <span class="instagram"><i class="fab fa-instagram"></i></span>
+    </div>
+    <div class="card">
+      <span class="twitter"><i class="fab fa-twitter"></i></span>
+    </div>
+    <div class="card">
+      <span class="tiktok"><i class="fab fa-tiktok"></i></span>
+    </div>
+    <div class="card">
+      <span class="facebook"><i class="fab fa-facebook"></i></span>
+    </div>
+    <div class="card">
+
+    </div>
+    <div class="card">
+      <span class="discord"><i class="fab fa-discord"></i></span>
+    </div>
+    <div class="card">
+      <span class="github"><i class="fab fa-github"></i></span>
+    </div>
+    <div class="card">
+      <span class="telegram"><i class="fab fa-telegram"></i></span>
+    </div>
+    <div class="card">
+      <span class="youtube"><i class="fab fa-youtube"></i></span>
+    </div>
+    <p class="text">Our Socials</p>
+    <div class="main_back"></div>
+  </div>
+</body>
+</html>

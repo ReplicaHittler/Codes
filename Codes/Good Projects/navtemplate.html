@@ -1,0 +1,79 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template</title>
+    <style>
+        *{
+            padding:0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        nav{
+            background-color: blueviolet;
+            height: 7vh;
+        }
+        li{
+            display: inline;
+            list-style: none;
+            padding: 20px;
+        }
+        a{
+            text-decoration: none;
+        }
+        a:hover{
+            background-color: white;
+            border-radius: 9px;
+            border-radius: 1px solid black;
+            padding: 4px;
+        }
+        input{
+            width: 80px;
+            height: 31px;
+            width: 170px;
+            border-radius: 170px;
+        }
+        input:placeholder-shown{
+            font-weight: bolder;
+            font-style: italic;
+            padding-left: 6px;
+        }
+        .Abo{
+            display: inline-block;
+            position: relative;
+            top: 4px;
+        }
+        .paras{
+            height: 93vh;
+            width: 100vw;
+            border: 1px solid #000;
+        }
+    </style>
+</head>
+<body>
+    <header id="header">
+        <nav>
+            <div class="Abo">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Html</a></li>
+                <li><a href="#">Css</a></li>
+                <li><a href="#">C++</a></li>
+            </ul>
+            </div>
+            <div class="Abo">
+                <input type="search" placeholder="search" >
+            </div>
+        </nav>
+    </header>
+    <main id="main">
+        <div class="paras">
+        </div>
+        <div class="paras">
+            Bye
+        </div>
+    </main>
+</body>
+</html>

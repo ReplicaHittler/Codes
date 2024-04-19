@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cool Web Page</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #1f1f1f;
+            color: #ffffff;
+        }
+
+        header {
+            padding: 20px;
+            text-align: center;
+            background-color: #111;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 2.5em;
+            color: #4CAF50;
+            animation: fadeInUp 1s ease-out;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #111;
+            padding: 10px 0;
+        }
+
+        nav a {
+            padding: 15px 20px;
+            color: #ffffff;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #333;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 100px 20px;
+            background: url('https://via.placeholder.com/1600x600') center/cover;
+            color: #ffffff;
+            animation: fadeInUp 1s ease-out;
+        }
+
+        .hero h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+            color: #4CAF50;
+        }
+
+        .about {
+            text-align: center;
+            padding: 50px 20px;
+            background-color: #333;
+            color: #ffffff;
+            animation: fadeInUp 1s ease-out;
+        }
+
+        .about h3 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #4CAF50;
+        }
+
+        .about p {
+            font-size: 1.2em;
+            line-height: 1.6;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #111;
+            color: #ffffff;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Cool Web Page</h1>
+    </header>
+    <nav>
+        <a href="#hero">Home</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <div id="hero" class="hero">
+        <h2>Welcome to the Coolest Web Page</h2>
+        <p>Explore the awesomeness that awaits you.</p>
+    </div>
+    <div id="about" class="about">
+        <h3>About Us</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed accumsan libero at velit ultricies hendrerit.
+        </p>
+    </div>
+    <footer>
+        &copy; 2024 Cool Web Page. All rights reserved.
+    </footer>
+</body>
+
+</html>

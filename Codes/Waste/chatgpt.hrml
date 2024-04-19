@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cool Web Page</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #282c35;
+            color: #ffffff;
+        }
+
+        header {
+            padding: 20px;
+            text-align: center;
+            background-color: #1a1d23;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #1a1d23;
+        }
+
+        nav a {
+            padding: 15px 20px;
+            color: #ffffff;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #454b5d;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 100px 20px;
+            background-color: #454b5d;
+            color: #ffffff;
+        }
+
+        .hero h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+
+        .feature {
+            text-align: center;
+            padding: 50px 20px;
+            background-color: #282c35;
+            color: #ffffff;
+        }
+
+        .feature h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        .feature p {
+            font-size: 1.2em;
+            line-height: 1.6;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #1a1d23;
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Cool Web Page</h1>
+    </header>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+    </nav>
+    <div class="hero">
+        <h1>Welcome to our Cool Web Page</h1>
+        <p>Discover the awesomeness that awaits you.</p>
+    </div>
+    <div class="feature">
+        <h2>Key Features</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed accumsan libero at velit ultricies hendrerit.</p>
+    </div>
+    <footer>
+        &copy; 2024 Cool Web Page. All rights reserved.
+    </footer>
+</body>
+</html>

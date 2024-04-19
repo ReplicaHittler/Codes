@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors</title>
+    <style>
+        /* universal selector */
+        *{
+            background-color: thistle;
+            padding: 0px;
+            margin: 0px;
+        }
+        /* child seletor */
+        div > p {
+            background-color: chartreuse;
+        }
+        /* Desendent selector */
+        article div {
+            background-color: darkmagenta;
+        }
+        /* class selector */
+        .Heheboi{
+            font-size: larger;
+        }
+        /* Pseudo selector */
+        a:hover{
+            background-color: red;
+            color: blueviolet;
+        }
+        a:visited{
+            color: aqua;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="HeheBoi">
+        <p>He Jani How Are You ????</p>
+    </div>
+    <article>
+        <div class="HeheBoi">
+            I Am A DIV .  Div The Block Element .
+        </div>
+    </article>
+    <a href="http://www.google.com">Go To GooGle BaBaaaaa</a>
+</body>
+</html>

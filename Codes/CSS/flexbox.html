@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexBox</title>
+    <style>
+        .container {
+             display: flex;
+             border: 2px dashed black;
+             flex-direction: row;
+             justify-content: center;
+             align-items:center;
+             width: 90vw;
+             height: 90vh;
+        }
+        .item{
+            height: 32px;
+            width: 32px;
+            background-color: blueviolet;
+            border: 1px solid black;
+        }
+        .btn{
+            height: 32px;
+            width: 50px;
+            background-color: blueviolet;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+        <div class="item">7</div>
+        <div class="ds">
+        <!-- Flex Box have order by default 0 , flexgrow to made size 2 3 times flex shrink is used to shrink if space is small,align self is used for one box to move -->
+        </div>
+    </div>
+</body>
+</html>

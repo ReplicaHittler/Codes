@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    *{
+        background-color: #000;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        color: grey;
+    }
+    
+    .container{
+        padding: 27px 27px ;
+        position: relative;
+        top: 16vh;
+        left: 37vw;
+        width: 64vh;
+        height: 72vh;;
+        border: 1px solid grey;
+        border-radius: 22px;
+    }
+    label{
+        font-family: fantasy;
+        color: grey;
+    }
+    label{
+        display:block;
+        padding-top: 27px;
+        padding-bottom: 9px;
+    }
+    input{
+        display: block;
+        height: 34px;
+        width: 100%;
+        border: 1px solid grey;
+        border-radius: 15px;
+        padding: 14px ;
+    }
+    .end{
+        display: block;
+        padding-top: 27px;
+        padding-bottom: 9px;
+        text-align: center;
+        font-family: fantasy;
+        max-height: fit-content;
+    }
+    a{
+        position: relative;
+        top: 9px;
+        border: 1px solid gray;
+        border-radius: 6px;
+        text-decoration: none;
+        color: grey;
+        padding: 4px 4px;
+    }
+    input:hover{
+        border-color: palevioletred;
+    }
+    a:hover{
+        background-color: palevioletred;
+        border-color: palevioletred;
+        color: white;
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <label class="given" >Email</label>
+        <input class="taken" type="email" required>
+        
+        <label class="given">Subject</label>
+        <input class="taken" type="text">
+        
+        <label class="given"> How can we help you?</label>
+        <input class="taken" type="text">      
+       
+        <div class="end">
+            <a href="mailto:ahadbutt220000@gmail.com">Mail Me</a>
+    </div>
+</body>
+</html>
